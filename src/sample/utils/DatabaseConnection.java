@@ -9,9 +9,22 @@ public class DatabaseConnection {
     public Connection databaseLink;
 
     public Connection openConnection() {
-        String url = "jdbc:postgresql://localhost:5432/LavoratoriStagionali";
-        String user = "postgres";
-        String password = "postgres";
+        String url = "";
+        String user = "";
+        String password = "";
+
+        try (java.io.InputStream input = new java.io.FileInputStream("config.properties")) {
+            java.util.Properties prop = new java.util.Properties();
+            prop.load(input);
+
+            url = prop.getProperty("db.url");
+            user = prop.getProperty("db.user");
+            password = prop.getProperty("db.password");
+
+        } catch (java.io.IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -23,9 +36,9 @@ public class DatabaseConnection {
     }
 
     public Connection closeConnection() {
-        try{
+        try {
             databaseLink.close();
-        } catch (SQLException sqlE){
+        } catch (SQLException sqlE) {
             System.out.println("Error: " + sqlE.getMessage());
         }
         return databaseLink;

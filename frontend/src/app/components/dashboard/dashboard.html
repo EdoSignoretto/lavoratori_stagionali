@@ -1,0 +1,47 @@
+<div class="p-8">
+  <h1 class="text-3xl font-light mb-6 text-gray-800">Dashboard</h1>
+
+  <!-- Stats Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <mat-card class="bg-blue-50 cursor-pointer hover:shadow-lg transition" routerLink="/lavoratori">
+      <mat-card-header>
+        <mat-card-title>Lavoratori</mat-card-title>
+        <mat-card-subtitle>Totale registrati</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="pt-4">
+        <h2 class="text-4xl font-bold text-blue-600">124</h2>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="bg-green-50">
+      <mat-card-header>
+        <mat-card-title>Disponibili</mat-card-title>
+        <mat-card-subtitle>Pronti al lavoro</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="pt-4">
+        <h2 class="text-4xl font-bold text-green-600">45</h2>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="bg-purple-50">
+      <mat-card-header>
+        <mat-card-title>Aziende</mat-card-title>
+        <mat-card-subtitle>Attive</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="pt-4">
+        <h2 class="text-4xl font-bold text-purple-600">12</h2>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Actions -->
+  <h2 class="text-2xl font-light mb-4 text-gray-800">Azioni Rapide</h2>
+  <div class="flex gap-4">
+    <button mat-raised-button color="primary">
+      <mat-icon>add</mat-icon> Nuovo Lavoratore
+    </button>
+    <button mat-stroked-button>
+      <mat-icon>search</mat-icon> Ricerca Avanzata
+    </button>
+  </div>
+</div>

@@ -129,5 +129,5 @@ INSERT INTO LINGUE(lingua) VALUES ('Turco');
 INSERT INTO LINGUE(lingua) VALUES ('Ucraino');
 INSERT INTO LINGUE(lingua) VALUES ('Ungherese');
 
-INSERT INTO CREDENZIALI(nomeDipendente, cognomeDipendente, dataNascitaDipendente, luogoNascitaDipendente, nazionalità, mailDipendente, telefonoDipendente, username, pass) VALUES ('Mario', 'Rossi','1990-06-12', 'Verona', 'Italiana', 'mariorossi@gmail.com', '3411677123', 'DIP01','test1');
-INSERT INTO CREDENZIALI(nomeDipendente, cognomeDipendente, dataNascitaDipendente, luogoNascitaDipendente, nazionalità, mailDipendente, telefonoDipendente, username, pass) VALUES ('Elena', 'Bianchi','1992-09-06', 'Verona', 'Italiana', 'elenabianchi@gmail.com', '3491617186','DIP02','test2');
+INSERT INTO CREDENZIALI(nomeDipendente, cognomeDipendente, dataNascitaDipendente, luogoNascitaDipendente, nazionalità, mailDipendente, telefonoDipendente, username, pass) VALUES ('Nome1', 'Cognome1','1990-01-01', 'Luogo1', 'Italiana', 'user1@example.com', '3330000001', 'DIP01','password_hash_placeholder1');
+INSERT INTO CREDENZIALI(nomeDipendente, cognomeDipendente, dataNascitaDipendente, luogoNascitaDipendente, nazionalità, mailDipendente, telefonoDipendente, username, pass) VALUES ('Nome2', 'Cognome2','1992-01-01', 'Luogo2', 'Italiana', 'user2@example.com', '3330000002','DIP02','password_hash_placeholder2');
